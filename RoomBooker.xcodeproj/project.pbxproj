@@ -21,6 +21,8 @@
 		4D21168716DCE50C00F78B37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D21166816DCE50C00F78B37 /* Foundation.framework */; };
 		4D21168F16DCE50C00F78B37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D21168D16DCE50C00F78B37 /* InfoPlist.strings */; };
 		4D21169216DCE50C00F78B37 /* RoomBookerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21169116DCE50C00F78B37 /* RoomBookerTests.m */; };
+		4D21169D16DCE66000F78B37 /* RoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21169C16DCE66000F78B37 /* RoomTests.m */; };
+		4D2116A016DCE73300F78B37 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21169F16DCE73300F78B37 /* Room.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		4D21168E16DCE50C00F78B37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4D21169016DCE50C00F78B37 /* RoomBookerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomBookerTests.h; sourceTree = "<group>"; };
 		4D21169116DCE50C00F78B37 /* RoomBookerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomBookerTests.m; sourceTree = "<group>"; };
+		4D21169B16DCE66000F78B37 /* RoomTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomTests.h; sourceTree = "<group>"; };
+		4D21169C16DCE66000F78B37 /* RoomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomTests.m; sourceTree = "<group>"; };
+		4D21169E16DCE73300F78B37 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Room.h; path = Models/Room.h; sourceTree = "<group>"; };
+		4D21169F16DCE73300F78B37 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Room.m; path = Models/Room.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 		4D21166C16DCE50C00F78B37 /* RoomBooker */ = {
 			isa = PBXGroup;
 			children = (
+				4D21169E16DCE73300F78B37 /* Room.h */,
+				4D21169F16DCE73300F78B37 /* Room.m */,
 				4D21167516DCE50C00F78B37 /* AppDelegate.h */,
 				4D21167616DCE50C00F78B37 /* AppDelegate.m */,
 				4D21166D16DCE50C00F78B37 /* Supporting Files */,
@@ -138,6 +146,8 @@
 			children = (
 				4D21169016DCE50C00F78B37 /* RoomBookerTests.h */,
 				4D21169116DCE50C00F78B37 /* RoomBookerTests.m */,
+				4D21169B16DCE66000F78B37 /* RoomTests.h */,
+				4D21169C16DCE66000F78B37 /* RoomTests.m */,
 				4D21168B16DCE50C00F78B37 /* Supporting Files */,
 			);
 			path = RoomBookerTests;
@@ -263,6 +273,7 @@
 			files = (
 				4D21167316DCE50C00F78B37 /* main.m in Sources */,
 				4D21167716DCE50C00F78B37 /* AppDelegate.m in Sources */,
+				4D2116A016DCE73300F78B37 /* Room.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D21169216DCE50C00F78B37 /* RoomBookerTests.m in Sources */,
+				4D21169D16DCE66000F78B37 /* RoomTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
