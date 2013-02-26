@@ -10,4 +10,14 @@
 
 @implementation BookingTests
 
+- (void)testCreatingABooking
+{
+    Room *library = [[Room alloc] initWithName:@"Library"];
+    Booking *testBooking = [[Booking alloc] initWithRoom:library startTime:[NSDate dateWithTimeIntervalSince1970:100] endTime:[NSDate dateWithTimeIntervalSince1970:150]];
+    STAssertEqualObjects([[testBooking room] name], @"Library", nil);
+    STAssertEqualObjects([testBooking startTime], [NSDate dateWithTimeIntervalSince1970:100], nil);
+    STAssertEqualObjects([testBooking endTime], [NSDate dateWithTimeIntervalSince1970:150], nil);
+}
+
+
 @end

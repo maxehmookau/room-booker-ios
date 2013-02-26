@@ -10,4 +10,12 @@
 
 @implementation Booking
 
+- (id)initWithRoom:(Room *)aRoom startTime:(NSDate *)aStartTime endTime:(NSDate *)anEndTime
+{
+    _room = aRoom;
+    _startTime = aStartTime;
+    _endTime = anEndTime;
+    return [super init];
+}
+
 @end

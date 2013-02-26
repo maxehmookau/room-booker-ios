@@ -8,6 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "Booking.h"
+#import "Room.h"
 
 @interface BookingTests : SenTestCase
 
