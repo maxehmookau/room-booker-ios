@@ -13,7 +13,13 @@
 - (id)initWithName:(NSString *)aName
 {
     _name = aName;
+    _bookings = [[NSMutableArray alloc] init];
     return [super init];
+}
+
+- (void)addBooking:(Booking *)aBooking
+{
+    [_bookings addObject:aBooking];
 }
 
 @end

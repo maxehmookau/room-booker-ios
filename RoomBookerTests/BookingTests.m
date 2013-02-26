@@ -19,5 +19,4 @@
     STAssertEqualObjects([testBooking endTime], [NSDate dateWithTimeIntervalSince1970:150], nil);
 }
 
-
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Booking.h"
 
 @interface Room : NSObject
 {
@@ -14,12 +15,14 @@
     NSString *_name;
     
     //Array of Booking objects
-    NSArray *_bookings;
+    NSMutableArray *_bookings;
 }
 
 - (id)initWithName:(NSString *)aName;
+- (void)addBooking:(Booking *)aBooking;
+//- (BOOL)isCurrentlyOccupied;
 
 @property (nonatomic) NSString *name;
-@property (nonatomic) NSArray *bookings;
+@property (nonatomic) NSMutableArray *bookings;
 
 @end

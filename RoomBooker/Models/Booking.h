@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Room.h"
+@class Room;
 
 @interface Booking : NSObject
 {
