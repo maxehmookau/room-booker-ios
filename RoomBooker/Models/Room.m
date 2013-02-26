@@ -22,4 +22,31 @@
     [_bookings addObject:aBooking];
 }
 
+- (BOOL)isCurrentlyOccupied
+{
+    NSDate *now = [NSDate date];
+    for (Booking *booking in _bookings) {
+        if ([Room date:now isBetweenDate:[booking startTime] andDate:[booking endTime]]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+
+// This should probably be a category on NSDate!
+// Solutions taken from here
+// http://stackoverflow.com/questions/1072848/how-to-check-if-an-nsdate-occurs-between-two-other-nsdates
+// Could definitely do with more elegent solution to this problem.
++ (BOOL)date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate
+{
+    if ([date compare:beginDate] == NSOrderedAscending)
+    	return NO;
+    
+    if ([date compare:endDate] == NSOrderedDescending)
+    	return NO;
+    
+    return YES;
+}
+
 @end

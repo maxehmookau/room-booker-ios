@@ -37,16 +37,17 @@
     room = [[Room alloc] initWithName:@"Library"];
     Booking *testBooking = [[Booking alloc] initWithRoom:room startTime:[NSDate dateWithTimeIntervalSince1970:100] endTime:[NSDate dateWithTimeIntervalSince1970:150]];
     [room addBooking:testBooking];
-    STAssertTrue([[room bookings] objectAtIndex:0] == testBooking, nil);
+    STAssertEquals([[room bookings] objectAtIndex:0], testBooking, nil);
     
 }
 
-//- (void)testCheckingRoomIsOccupied
-//{
-//    Room *library = [[Room alloc] initWithName:@"Library"];
-//    Booking *testBooking = [[Booking alloc] initWithRoom:library startTime:[NSDate dateWithTimeIntervalSince1970:100] endTime:[NSDate dateWithTimeIntervalSince1970:150]];
-//    STAssertTrue([library isCurrentlyOccupied], nil);
-//}
+- (void)testCheckingRoomIsOccupied
+{
+    Room *library = [[Room alloc] initWithName:@"Library"];
+    Booking *testBooking = [[Booking alloc] initWithRoom:library startTime:[NSDate dateWithTimeIntervalSince1970:100] endTime:[NSDate dateWithTimeIntervalSince1970:150]];
+    [library addBooking:testBooking];
+    STAssertFalse([library isCurrentlyOccupied], nil);
+}
 
 
 @end

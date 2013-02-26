@@ -20,7 +20,10 @@
 
 - (id)initWithName:(NSString *)aName;
 - (void)addBooking:(Booking *)aBooking;
-//- (BOOL)isCurrentlyOccupied;
+- (BOOL)isCurrentlyOccupied;
+
+
++ (BOOL)date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSMutableArray *bookings;
