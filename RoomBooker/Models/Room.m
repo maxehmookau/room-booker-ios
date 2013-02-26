@@ -22,15 +22,19 @@
     [_bookings addObject:aBooking];
 }
 
-- (BOOL)isCurrentlyOccupied
+- (BOOL)isOccupiedAt:(NSDate *)aDate
 {
-    NSDate *now = [NSDate date];
     for (Booking *booking in _bookings) {
-        if ([Room date:now isBetweenDate:[booking startTime] andDate:[booking endTime]]) {
+        if ([Room date:aDate isBetweenDate:[booking startTime] andDate:[booking endTime]]) {
             return YES;
         }
     }
     return NO;
+}
+
+- (BOOL)isCurrentlyOccupied
+{
+    return [self isOccupiedAt:[NSDate date]];
 }
 
 

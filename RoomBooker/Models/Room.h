@@ -20,6 +20,7 @@
 
 - (id)initWithName:(NSString *)aName;
 - (void)addBooking:(Booking *)aBooking;
+- (BOOL)isOccupiedAt:(NSDate *)aDate;
 - (BOOL)isCurrentlyOccupied;
 
 

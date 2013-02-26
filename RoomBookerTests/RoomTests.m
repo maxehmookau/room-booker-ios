@@ -57,5 +57,13 @@
     STAssertTrue([library isCurrentlyOccupied], nil);
 }
 
+- (void)testIsRoomOccupiedAt
+{
+    Room *library = [[Room alloc] initWithName:@"Library"];
+    Booking *testBooking = [[Booking alloc] initWithRoom:library startTime:[NSDate dateWithTimeIntervalSince1970:900] endTime:[NSDate dateWithTimeIntervalSince1970:1100]];
+    [library addBooking:testBooking];
+    STAssertTrue([library isOccupiedAt:[NSDate dateWithTimeIntervalSince1970:1000]], nil);
+}
+
 
 @end
