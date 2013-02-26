@@ -10,4 +10,10 @@
 
 @implementation Room
 
+- (id)initWithName:(NSString *)aName
+{
+    _name = aName;
+    return [super init];
+}
+
 @end

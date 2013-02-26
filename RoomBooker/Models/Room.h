@@ -9,5 +9,17 @@
 #import <Foundation/Foundation.h>
 
 @interface Room : NSObject
+{
+    // Display name for the room
+    NSString *_name;
+    
+    //Array of Booking objects
+    NSArray *_bookings;
+}
+
+- (id)initWithName:(NSString *)aName;
+
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSArray *bookings;
 
 @end

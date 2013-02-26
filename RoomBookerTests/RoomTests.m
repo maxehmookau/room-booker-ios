@@ -13,7 +13,6 @@
 - (void)setUp
 {
     [super setUp];
-    room = [[Room alloc] init];
 }
 
 - (void)tearDown
@@ -23,7 +22,14 @@
 
 - (void)testCreatingARoom
 {
-    STAssertEqualObjects(@"Test", @"Test", @"Test really should equal test...");
+    room = [[Room alloc] init];
+    STAssertEquals([room class], [Room class], nil);
+}
+
+- (void)testCreatingARoomWithAName
+{
+    room = [[Room alloc] initWithName:@"Library"];
+    STAssertEqualObjects([room name], @"Library", nil);
 }
 
 
