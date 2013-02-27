@@ -23,6 +23,11 @@
 		4D21169216DCE50C00F78B37 /* RoomBookerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21169116DCE50C00F78B37 /* RoomBookerTests.m */; };
 		4D21169D16DCE66000F78B37 /* RoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21169C16DCE66000F78B37 /* RoomTests.m */; };
 		4D2116A016DCE73300F78B37 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21169F16DCE73300F78B37 /* Room.m */; };
+		4D7B6C3F16DE83A0000ABAEA /* RoomCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B6C3E16DE83A0000ABAEA /* RoomCollection.m */; };
+		4D7B6C4516DE89EC000ABAEA /* RoomsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B6C4316DE89EC000ABAEA /* RoomsListViewController.m */; };
+		4D7B6C4616DE89EC000ABAEA /* RoomsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7B6C4416DE89EC000ABAEA /* RoomsListViewController.xib */; };
+		4D7B6C5116DE9418000ABAEA /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7B6C4F16DE92D5000ABAEA /* libMBProgressHUD.a */; };
+		4D7B6C5416DE9D62000ABAEA /* RoomOverviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B6C5316DE9D61000ABAEA /* RoomOverviewView.m */; };
 		4DB9EE2716DD2C09009E9F19 /* BookingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9EE2616DD2C09009E9F19 /* BookingTests.m */; };
 		4DB9EE2A16DD2C1E009E9F19 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9EE2916DD2C1E009E9F19 /* Booking.m */; };
 /* End PBXBuildFile section */
@@ -34,6 +39,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4D21166216DCE50C00F78B37;
 			remoteInfo = RoomBooker;
+		};
+		4D7B6C4E16DE92D5000ABAEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7B6C4716DE92D5000ABAEA /* MBProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D286A7491518C70F00E13FB8;
+			remoteInfo = MBProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +73,14 @@
 		4D21169C16DCE66000F78B37 /* RoomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomTests.m; sourceTree = "<group>"; };
 		4D21169E16DCE73300F78B37 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Room.h; path = Models/Room.h; sourceTree = "<group>"; };
 		4D21169F16DCE73300F78B37 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Room.m; path = Models/Room.m; sourceTree = "<group>"; };
+		4D7B6C3D16DE83A0000ABAEA /* RoomCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomCollection.h; path = Models/RoomCollection.h; sourceTree = "<group>"; };
+		4D7B6C3E16DE83A0000ABAEA /* RoomCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomCollection.m; path = Models/RoomCollection.m; sourceTree = "<group>"; };
+		4D7B6C4216DE89EC000ABAEA /* RoomsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomsListViewController.h; path = Views/RoomsListViewController.h; sourceTree = "<group>"; };
+		4D7B6C4316DE89EC000ABAEA /* RoomsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomsListViewController.m; path = Views/RoomsListViewController.m; sourceTree = "<group>"; };
+		4D7B6C4416DE89EC000ABAEA /* RoomsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RoomsListViewController.xib; path = Views/RoomsListViewController.xib; sourceTree = "<group>"; };
+		4D7B6C4716DE92D5000ABAEA /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBProgressHUD.xcodeproj; path = "../../../Downloads/MBProgressHUD-master/MBProgressHUD.xcodeproj"; sourceTree = "<group>"; };
+		4D7B6C5216DE9D61000ABAEA /* RoomOverviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomOverviewView.h; path = Views/RoomOverviewView.h; sourceTree = "<group>"; };
+		4D7B6C5316DE9D61000ABAEA /* RoomOverviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomOverviewView.m; path = Views/RoomOverviewView.m; sourceTree = "<group>"; };
 		4DB9EE2516DD2C09009E9F19 /* BookingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookingTests.h; path = RoomBookerTests/BookingTests.h; sourceTree = SOURCE_ROOT; };
 		4DB9EE2616DD2C09009E9F19 /* BookingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookingTests.m; path = RoomBookerTests/BookingTests.m; sourceTree = SOURCE_ROOT; };
 		4DB9EE2816DD2C1E009E9F19 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Booking.h; path = Models/Booking.h; sourceTree = "<group>"; };
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7B6C5116DE9418000ABAEA /* libMBProgressHUD.a in Frameworks */,
 				4D21166716DCE50C00F78B37 /* UIKit.framework in Frameworks */,
 				4D21166916DCE50C00F78B37 /* Foundation.framework in Frameworks */,
 				4D21166B16DCE50C00F78B37 /* CoreGraphics.framework in Frameworks */,
@@ -94,6 +115,7 @@
 		4D21165A16DCE50C00F78B37 = {
 			isa = PBXGroup;
 			children = (
+				4D7B6C4716DE92D5000ABAEA /* MBProgressHUD.xcodeproj */,
 				4D21166C16DCE50C00F78B37 /* RoomBooker */,
 				4D21168A16DCE50C00F78B37 /* RoomBookerTests */,
 				4D21166516DCE50C00F78B37 /* Frameworks */,
@@ -124,10 +146,8 @@
 		4D21166C16DCE50C00F78B37 /* RoomBooker */ = {
 			isa = PBXGroup;
 			children = (
-				4D21169E16DCE73300F78B37 /* Room.h */,
-				4D21169F16DCE73300F78B37 /* Room.m */,
-				4DB9EE2816DD2C1E009E9F19 /* Booking.h */,
-				4DB9EE2916DD2C1E009E9F19 /* Booking.m */,
+				4D7B6C4116DE89CE000ABAEA /* Views */,
+				4D7B6C4016DE89C7000ABAEA /* Models */,
 				4D21167516DCE50C00F78B37 /* AppDelegate.h */,
 				4D21167616DCE50C00F78B37 /* AppDelegate.m */,
 				4D21166D16DCE50C00F78B37 /* Supporting Files */,
@@ -170,6 +190,39 @@
 				4D21168D16DCE50C00F78B37 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D7B6C4016DE89C7000ABAEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D21169E16DCE73300F78B37 /* Room.h */,
+				4D21169F16DCE73300F78B37 /* Room.m */,
+				4DB9EE2816DD2C1E009E9F19 /* Booking.h */,
+				4DB9EE2916DD2C1E009E9F19 /* Booking.m */,
+				4D7B6C3D16DE83A0000ABAEA /* RoomCollection.h */,
+				4D7B6C3E16DE83A0000ABAEA /* RoomCollection.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4D7B6C4116DE89CE000ABAEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D7B6C4216DE89EC000ABAEA /* RoomsListViewController.h */,
+				4D7B6C4316DE89EC000ABAEA /* RoomsListViewController.m */,
+				4D7B6C4416DE89EC000ABAEA /* RoomsListViewController.xib */,
+				4D7B6C5216DE9D61000ABAEA /* RoomOverviewView.h */,
+				4D7B6C5316DE9D61000ABAEA /* RoomOverviewView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4D7B6C4816DE92D5000ABAEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D7B6C4F16DE92D5000ABAEA /* libMBProgressHUD.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +283,12 @@
 			mainGroup = 4D21165A16DCE50C00F78B37;
 			productRefGroup = 4D21166416DCE50C00F78B37 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4D7B6C4816DE92D5000ABAEA /* Products */;
+					ProjectRef = 4D7B6C4716DE92D5000ABAEA /* MBProgressHUD.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4D21166216DCE50C00F78B37 /* RoomBooker */,
@@ -237,6 +296,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4D7B6C4F16DE92D5000ABAEA /* libMBProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMBProgressHUD.a;
+			remoteRef = 4D7B6C4E16DE92D5000ABAEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4D21166116DCE50C00F78B37 /* Resources */ = {
@@ -247,6 +316,7 @@
 				4D21167916DCE50C00F78B37 /* Default.png in Resources */,
 				4D21167B16DCE50C00F78B37 /* Default@2x.png in Resources */,
 				4D21167D16DCE50C00F78B37 /* Default-568h@2x.png in Resources */,
+				4D7B6C4616DE89EC000ABAEA /* RoomsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +355,9 @@
 				4D21167716DCE50C00F78B37 /* AppDelegate.m in Sources */,
 				4D2116A016DCE73300F78B37 /* Room.m in Sources */,
 				4DB9EE2A16DD2C1E009E9F19 /* Booking.m in Sources */,
+				4D7B6C3F16DE83A0000ABAEA /* RoomCollection.m in Sources */,
+				4D7B6C4516DE89EC000ABAEA /* RoomsListViewController.m in Sources */,
+				4D7B6C5416DE9D62000ABAEA /* RoomOverviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
