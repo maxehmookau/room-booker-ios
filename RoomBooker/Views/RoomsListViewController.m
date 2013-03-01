@@ -10,6 +10,7 @@
 #import "Room.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "RoomOverviewView.h"
+#import "SVPullToRefresh.h"
 
 @interface RoomsListViewController ()
 
@@ -30,6 +31,7 @@
 {
     [table reloadData];
     [hud hide:YES afterDelay:0.4];
+    [table.pullToRefreshView stopAnimating];
 }
 
 
@@ -76,10 +78,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
     allRoomsCollection = [[RoomCollection alloc] init];
     [allRoomsCollection setDelegate:self];
     [allRoomsCollection allRooms];
+    
+    [table addPullToRefreshWithActionHandler:^{
+        [self viewDidAppear:NO];
+        [allRoomsCollection allRooms];
+    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated
