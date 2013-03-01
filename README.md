@@ -17,5 +17,11 @@ Write tests using OCUnit. Would be nice to write integration tests. Frank is a g
 ## Usage
 Carefully.
 
+But, if you really want to get it running:
+
+1. Download the git repo.
+2. Run `pod install` in the root directory
+3. Run it and see what happens!
+
 ## Licence
-Treat as confidential for now.
+All right reserved.
