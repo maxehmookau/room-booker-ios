@@ -26,10 +26,11 @@
 		4D7B6C3F16DE83A0000ABAEA /* RoomCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B6C3E16DE83A0000ABAEA /* RoomCollection.m */; };
 		4D7B6C4516DE89EC000ABAEA /* RoomsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B6C4316DE89EC000ABAEA /* RoomsListViewController.m */; };
 		4D7B6C4616DE89EC000ABAEA /* RoomsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7B6C4416DE89EC000ABAEA /* RoomsListViewController.xib */; };
-		4D7B6C5116DE9418000ABAEA /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7B6C4F16DE92D5000ABAEA /* libMBProgressHUD.a */; };
 		4D7B6C5416DE9D62000ABAEA /* RoomOverviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B6C5316DE9D61000ABAEA /* RoomOverviewView.m */; };
 		4DB9EE2716DD2C09009E9F19 /* BookingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9EE2616DD2C09009E9F19 /* BookingTests.m */; };
 		4DB9EE2A16DD2C1E009E9F19 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9EE2916DD2C1E009E9F19 /* Booking.m */; };
+		4DDA3F8C16E0DAC90088CB46 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA3F8B16E0DAC90088CB46 /* Podfile */; };
+		CE0CE60F04B04A02B661A3A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589125F9143B4D1CAFD50974 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		4D21169C16DCE66000F78B37 /* RoomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomTests.m; sourceTree = "<group>"; };
 		4D21169E16DCE73300F78B37 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Room.h; path = Models/Room.h; sourceTree = "<group>"; };
 		4D21169F16DCE73300F78B37 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Room.m; path = Models/Room.m; sourceTree = "<group>"; };
+		4D5A5E80B00C4CA192BD8090 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		4D7B6C3D16DE83A0000ABAEA /* RoomCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomCollection.h; path = Models/RoomCollection.h; sourceTree = "<group>"; };
 		4D7B6C3E16DE83A0000ABAEA /* RoomCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomCollection.m; path = Models/RoomCollection.m; sourceTree = "<group>"; };
 		4D7B6C4216DE89EC000ABAEA /* RoomsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomsListViewController.h; path = Views/RoomsListViewController.h; sourceTree = "<group>"; };
@@ -85,6 +87,8 @@
 		4DB9EE2616DD2C09009E9F19 /* BookingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookingTests.m; path = RoomBookerTests/BookingTests.m; sourceTree = SOURCE_ROOT; };
 		4DB9EE2816DD2C1E009E9F19 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Booking.h; path = Models/Booking.h; sourceTree = "<group>"; };
 		4DB9EE2916DD2C1E009E9F19 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Booking.m; path = Models/Booking.m; sourceTree = "<group>"; };
+		4DDA3F8B16E0DAC90088CB46 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		589125F9143B4D1CAFD50974 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +96,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7B6C5116DE9418000ABAEA /* libMBProgressHUD.a in Frameworks */,
 				4D21166716DCE50C00F78B37 /* UIKit.framework in Frameworks */,
 				4D21166916DCE50C00F78B37 /* Foundation.framework in Frameworks */,
 				4D21166B16DCE50C00F78B37 /* CoreGraphics.framework in Frameworks */,
+				CE0CE60F04B04A02B661A3A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,11 +119,13 @@
 		4D21165A16DCE50C00F78B37 = {
 			isa = PBXGroup;
 			children = (
+				4DDA3F8B16E0DAC90088CB46 /* Podfile */,
 				4D7B6C4716DE92D5000ABAEA /* MBProgressHUD.xcodeproj */,
 				4D21166C16DCE50C00F78B37 /* RoomBooker */,
 				4D21168A16DCE50C00F78B37 /* RoomBookerTests */,
 				4D21166516DCE50C00F78B37 /* Frameworks */,
 				4D21166416DCE50C00F78B37 /* Products */,
+				4D5A5E80B00C4CA192BD8090 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +145,7 @@
 				4D21166816DCE50C00F78B37 /* Foundation.framework */,
 				4D21166A16DCE50C00F78B37 /* CoreGraphics.framework */,
 				4D21168416DCE50C00F78B37 /* SenTestingKit.framework */,
+				589125F9143B4D1CAFD50974 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 				4D21165F16DCE50C00F78B37 /* Sources */,
 				4D21166016DCE50C00F78B37 /* Frameworks */,
 				4D21166116DCE50C00F78B37 /* Resources */,
+				75CA699BA23344F1A9D91C85 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,6 +325,7 @@
 				4D21167B16DCE50C00F78B37 /* Default@2x.png in Resources */,
 				4D21167D16DCE50C00F78B37 /* Default-568h@2x.png in Resources */,
 				4D7B6C4616DE89EC000ABAEA /* RoomsListViewController.xib in Resources */,
+				4DDA3F8C16E0DAC90088CB46 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +352,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		75CA699BA23344F1A9D91C85 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -459,6 +482,7 @@
 		};
 		4D21169616DCE50C00F78B37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5A5E80B00C4CA192BD8090 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoomBooker/RoomBooker-Prefix.pch";
@@ -471,6 +495,7 @@
 		};
 		4D21169716DCE50C00F78B37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5A5E80B00C4CA192BD8090 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoomBooker/RoomBooker-Prefix.pch";
