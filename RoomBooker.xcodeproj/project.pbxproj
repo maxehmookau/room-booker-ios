@@ -30,6 +30,7 @@
 		4DB9EE2716DD2C09009E9F19 /* BookingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9EE2616DD2C09009E9F19 /* BookingTests.m */; };
 		4DB9EE2A16DD2C1E009E9F19 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9EE2916DD2C1E009E9F19 /* Booking.m */; };
 		4DDA3F8C16E0DAC90088CB46 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA3F8B16E0DAC90088CB46 /* Podfile */; };
+		4DE586F216E2511300F1A08A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE586F116E2511300F1A08A /* QuartzCore.framework */; };
 		CE0CE60F04B04A02B661A3A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589125F9143B4D1CAFD50974 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		4DB9EE2816DD2C1E009E9F19 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Booking.h; path = Models/Booking.h; sourceTree = "<group>"; };
 		4DB9EE2916DD2C1E009E9F19 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Booking.m; path = Models/Booking.m; sourceTree = "<group>"; };
 		4DDA3F8B16E0DAC90088CB46 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		4DE586F116E2511300F1A08A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		589125F9143B4D1CAFD50974 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE586F216E2511300F1A08A /* QuartzCore.framework in Frameworks */,
 				4D21166716DCE50C00F78B37 /* UIKit.framework in Frameworks */,
 				4D21166916DCE50C00F78B37 /* Foundation.framework in Frameworks */,
 				4D21166B16DCE50C00F78B37 /* CoreGraphics.framework in Frameworks */,
@@ -132,6 +135,7 @@
 		4D21166516DCE50C00F78B37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DE586F116E2511300F1A08A /* QuartzCore.framework */,
 				4D21166616DCE50C00F78B37 /* UIKit.framework */,
 				4D21166816DCE50C00F78B37 /* Foundation.framework */,
 				4D21166A16DCE50C00F78B37 /* CoreGraphics.framework */,

@@ -55,7 +55,7 @@
     }
         
     [cell addSubview:[[RoomOverviewView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 100) room:currentRoom]];
-    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    //[cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     
