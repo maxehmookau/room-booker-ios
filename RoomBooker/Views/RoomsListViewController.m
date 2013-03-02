@@ -22,7 +22,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [self setTitle:@"Rooms"];
     }
     return self;
 }
@@ -37,6 +37,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
     Room *currentRoom = (Room *)[[allRoomsCollection rooms] objectAtIndex:indexPath.row];
@@ -46,6 +47,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Ident"];
     }
     
+    // Refresh views
+    for (UIView *subview in [cell subviews]) {
+        if ([subview class] == [RoomOverviewView class]) {
+            [subview removeFromSuperview];
+        }
+    }
+        
     [cell addSubview:[[RoomOverviewView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 100) room:currentRoom]];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
@@ -85,7 +93,6 @@
     [allRoomsCollection allRooms];
     
     [table addPullToRefreshWithActionHandler:^{
-        [self viewDidAppear:NO];
         [allRoomsCollection allRooms];
     }];
 }

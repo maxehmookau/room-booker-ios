@@ -13,9 +13,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = [[RoomsListViewController alloc] init];
+    _mainNavCon = [[UINavigationController alloc] initWithRootViewController:[[RoomsListViewController alloc] init]];
+    self.window.rootViewController = _mainNavCon;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -1,14 +1,14 @@
 
-SPEC CHECKSUMS: 
-  SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
-  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
+PODS:
+- MBProgressHUD (0.5)
+- SVPullToRefresh (0.4.1)
 
-DEPENDENCIES: 
+DEPENDENCIES:
 - MBProgressHUD
 - SVPullToRefresh
 
-PODS: 
-- MBProgressHUD (0.5)
-- SVPullToRefresh (0.4.1)
+SPEC CHECKSUMS:
+  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
+  SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
 
 COCOAPODS: 0.16.4
