@@ -11,6 +11,7 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "RoomOverviewView.h"
 #import "SVPullToRefresh.h"
+#import "RoomDayViewController.h"
 
 @interface RoomsListViewController ()
 
@@ -74,6 +75,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    RoomDayViewController *dayVC = [[RoomDayViewController alloc] init];
+    [self.navigationController pushViewController:dayVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -86,7 +89,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Getting rooms...";
+    [hud show:YES];
     // Do any additional setup after loading the view from its nib.
     allRoomsCollection = [[RoomCollection alloc] init];
     [allRoomsCollection setDelegate:self];
@@ -99,9 +104,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Getting rooms...";
-    [hud show:YES];
+    
     
 }
 

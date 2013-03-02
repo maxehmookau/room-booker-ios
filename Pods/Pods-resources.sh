@@ -25,3 +25,8 @@ install_resource()
       ;;
   esac
 }
+install_resource 'MACalendarUI/Images/ma_leftArrow.png'
+install_resource 'MACalendarUI/Images/ma_leftArrow@2x.png'
+install_resource 'MACalendarUI/Images/ma_rightArrow.png'
+install_resource 'MACalendarUI/Images/ma_rightArrow@2x.png'
+install_resource 'MACalendarUI/Images/ma_topBackground.png'

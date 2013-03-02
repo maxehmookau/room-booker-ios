@@ -1,13 +1,16 @@
 
 PODS:
+- MACalendarUI (1.0.0)
 - MBProgressHUD (0.5)
 - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
+- MACalendarUI
 - MBProgressHUD
 - SVPullToRefresh
 
 SPEC CHECKSUMS:
+  MACalendarUI: 0faba279a7cef8361afcaba32d13aef4827b84d0
   MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
 

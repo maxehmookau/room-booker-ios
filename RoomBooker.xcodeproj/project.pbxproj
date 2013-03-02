@@ -31,6 +31,8 @@
 		4DB9EE2A16DD2C1E009E9F19 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9EE2916DD2C1E009E9F19 /* Booking.m */; };
 		4DDA3F8C16E0DAC90088CB46 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA3F8B16E0DAC90088CB46 /* Podfile */; };
 		4DE586F216E2511300F1A08A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE586F116E2511300F1A08A /* QuartzCore.framework */; };
+		4DE586F616E2719200F1A08A /* RoomDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE586F416E2719200F1A08A /* RoomDayViewController.m */; };
+		4DE586F716E2719200F1A08A /* RoomDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE586F516E2719200F1A08A /* RoomDayViewController.xib */; };
 		CE0CE60F04B04A02B661A3A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589125F9143B4D1CAFD50974 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,9 @@
 		4DB9EE2916DD2C1E009E9F19 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Booking.m; path = Models/Booking.m; sourceTree = "<group>"; };
 		4DDA3F8B16E0DAC90088CB46 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		4DE586F116E2511300F1A08A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DE586F316E2719200F1A08A /* RoomDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomDayViewController.h; path = Views/RoomDayViewController.h; sourceTree = "<group>"; };
+		4DE586F416E2719200F1A08A /* RoomDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomDayViewController.m; path = Views/RoomDayViewController.m; sourceTree = "<group>"; };
+		4DE586F516E2719200F1A08A /* RoomDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RoomDayViewController.xib; path = Views/RoomDayViewController.xib; sourceTree = "<group>"; };
 		589125F9143B4D1CAFD50974 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -215,6 +220,9 @@
 				4D7B6C4416DE89EC000ABAEA /* RoomsListViewController.xib */,
 				4D7B6C5216DE9D61000ABAEA /* RoomOverviewView.h */,
 				4D7B6C5316DE9D61000ABAEA /* RoomOverviewView.m */,
+				4DE586F316E2719200F1A08A /* RoomDayViewController.h */,
+				4DE586F416E2719200F1A08A /* RoomDayViewController.m */,
+				4DE586F516E2719200F1A08A /* RoomDayViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -297,6 +305,7 @@
 				4D21167D16DCE50C00F78B37 /* Default-568h@2x.png in Resources */,
 				4D7B6C4616DE89EC000ABAEA /* RoomsListViewController.xib in Resources */,
 				4DDA3F8C16E0DAC90088CB46 /* Podfile in Resources */,
+				4DE586F716E2719200F1A08A /* RoomDayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +361,7 @@
 				4D7B6C3F16DE83A0000ABAEA /* RoomCollection.m in Sources */,
 				4D7B6C4516DE89EC000ABAEA /* RoomsListViewController.m in Sources */,
 				4D7B6C5416DE9D62000ABAEA /* RoomOverviewView.m in Sources */,
+				4DE586F616E2719200F1A08A /* RoomDayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
