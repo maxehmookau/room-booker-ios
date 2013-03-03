@@ -75,7 +75,15 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *selectedRoomName = [[(RoomOverviewView *)[[[table cellForRowAtIndexPath:indexPath] subviews] objectAtIndex:2] room] name];
+
+    RoomOverviewView *roomOverview = nil;
+    for (UIView *view in [[table cellForRowAtIndexPath:indexPath] subviews]) {
+        if([view class] == [RoomOverviewView class])
+        {
+            roomOverview = (RoomOverviewView *)view;
+        }
+    }
+    NSString *selectedRoomName = [[roomOverview room] name];
     RoomDayViewController *dayVC = [[RoomDayViewController alloc] initWithRoomName:selectedRoomName];
     [self.navigationController pushViewController:dayVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
