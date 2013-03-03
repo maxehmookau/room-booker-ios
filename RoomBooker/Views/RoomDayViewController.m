@@ -23,15 +23,20 @@
     return self;
 }
 
+- (id)initWithRoomName:(NSString *)roomName
+{
+    [self setTitle:roomName];
+    return [self init];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
     CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
     dayView = [[MADayView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
-    dayView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:dayView];
 }
 

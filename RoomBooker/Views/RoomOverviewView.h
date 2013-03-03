@@ -16,4 +16,6 @@
 
 - (id)initWithFrame:(CGRect)frame room:(Room *)aRoom;
 +(NSString*)UUIDString;
+
+@property (nonatomic, retain) Room *room;
 @end

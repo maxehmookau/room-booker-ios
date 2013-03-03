@@ -13,4 +13,7 @@
 {
     MADayView *dayView;
 }
+
+- (id)initWithRoomName:(NSString *)roomName;
+
 @end

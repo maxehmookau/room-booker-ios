@@ -75,7 +75,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    RoomDayViewController *dayVC = [[RoomDayViewController alloc] init];
+    NSString *selectedRoomName = [[(RoomOverviewView *)[[[table cellForRowAtIndexPath:indexPath] subviews] objectAtIndex:2] room] name];
+    RoomDayViewController *dayVC = [[RoomDayViewController alloc] initWithRoomName:selectedRoomName];
     [self.navigationController pushViewController:dayVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
